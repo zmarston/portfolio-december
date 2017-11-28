@@ -1,0 +1,86 @@
+/* For testing only */
+
+/**:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+.columns {
+  min-height: 100px;
+}*/
+
+/* End for testing */
+
+.saitama {
+  width: 65vw;
+
+}
+
+.genos {
+  width: 20vw;
+  float: right;
+  margin-bottom: 10px;
+
+}
+
+.mumen {
+  width: 20vw;
+  float: right;
+  clear: both;
+}
+
+.side {
+  margin-top: 30px;
+  margin-right: 6%;
+  float: right;
+}
+
+.main {
+  margin-top: 30px;
+  margin-left: 4%;
+  float: left;
+}
+
+@media screen and (max-width: 1100px ) {
+  .saitama {
+    width: 90vw;
+  }
+
+  .genos {
+    width: 40vw;
+    float: left;
+    margin-top: 2%;
+    margin-left: 4%;
+  }
+
+  .mumen {
+    width: 40vw;
+    float: right;
+    clear: none;
+    margin-top: 2%;
+    margin-right: 3.5%;
+
+  }
+
+  .side {
+
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+}
+
+@media screen and (max-width: 500px ) {
+  .mumen, .genos {
+    float: left;
+    width: 90vw;
+  }
+
+  .mumen {
+    clear: both;
+    margin-left: 4%;
+
+  }
+
+}
