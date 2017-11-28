@@ -1,0 +1,65 @@
+ /*For testing only */
+/*
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+.columns {
+  min-height: 100px;
+}*/
+
+/* End for testing */
+body {
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 20px;
+  color: white;
+}
+
+img {
+  width: 18vw;
+  float: left;
+  margin: 10px;
+  border-radius: 10%;
+  box-shadow: 10px 5px 5px darkred;
+}
+
+img:nth-child(5) {
+  clear: both;
+}
+
+.gallery {
+  display: block;
+  margin-left: 10%;
+
+}
+
+
+@media screen and (max-width: 1100px) {
+  img {
+    width: 40vw;
+  }
+
+  .gallery {
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  h1 {
+    letter-spacing: 8px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  h1 {
+    letter-spacing: 4px;
+  }
+  img{
+    width: 80vw;
+  }
+}
