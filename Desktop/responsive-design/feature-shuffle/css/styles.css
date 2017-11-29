@@ -1,0 +1,122 @@
+/* For testing only */
+
+/**:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+.columns {
+  min-height: 100px;
+}*/
+
+/* End for testing */
+
+body {
+  color: white;
+  background-color: green;
+}
+
+div img {
+  display: none;
+}
+
+#logo {
+  width: 90vw;
+  margin-left: -5px;
+}
+
+#cn {
+  display: none;
+}
+
+h2 {
+  color: #66ccff;
+  text-align: center;
+  font-size: 9vw;
+}
+
+@media screen and (min-width: 500px) {
+  div img {
+    display: block;
+  }
+
+  #finnImage {
+    float: left;
+    width: 30vw;
+  }
+  #jakeImage{
+    float: right;
+    width: 30vw;
+  }
+
+  #lichImage {
+    float: left;
+    width: 40vw;
+  }
+
+  h3 {
+    font-size: 4vw;
+  }
+  h2 {
+  }
+  p {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #logo {
+    width: 50vw;
+    margin-left: 30px;
+  }
+
+  #cn {
+    display: block;
+    width: 20vw;
+    float: right;
+    margin: 40px;
+  }
+
+  #jakeImage {
+    float: left;
+    width: 20vw;
+    margin-top: 4%;
+  }
+  #finnImage {
+    width: 20vw;
+  }
+  #lichImage {
+    margin-top: 8%;
+    margin-left: -35%;
+    width: 30vw;
+  }
+
+  .lich p::before {
+    content: '';
+    width: 100%;
+    height: 1.6em;
+    display: inline-block;
+  }
+
+  .gallery div {
+    width: 20vw;
+    float: left;
+    margin: 4%;
+    margin-top: -8%;
+  }
+
+  .gallery {
+    margin: 8%;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  h2 {
+    font-size: 110px;
+  }
+
+  h3 {
+    font-size: 60px;
+  }
+}
