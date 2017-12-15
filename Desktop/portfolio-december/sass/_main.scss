@@ -34,16 +34,17 @@ li {
 }
 
 .block {
-  background-color: darkblue;
+  background-color: black;
   width: 200px;
   height: 200px;
   margin: 20px;
   transform: scale(1);
   transition: transform .2s ease-in-out;
-
+  overflow: hidden;
 }
 .block:hover {
   transform: scale(2.3);
+  z-index: 1;
 }
 
 .header {
@@ -64,8 +65,16 @@ li {
   height: 250px;
   background-color: purple;
 }
-
-
+.block img {
+  object-fit: contain;
+  width: 100%;
+}
+.tesla img {
+  width: 150%;
+}
+.es img {
+  width: 200%;
+}
 @media screen and (min-width: 800px) {
   .grid {
     flex-direction: row;
