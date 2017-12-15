@@ -3,14 +3,14 @@
   "base/modules",
   "components/modules",
   "layout/modules";
-
 .grid {
   background-color: darkred;
-  max-width: 600px;
-  height: 1340px;
+  width: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-grow: 1;
 }
 
 .block {
@@ -21,7 +21,30 @@
 }
 
 .header {
-  width: 100vw;
+  width: 100%;
   height: 150px;
   background-color: orange;
+}
+
+.about-me {
+  height: 250px;
+  width: 100%;
+  background-color: darkgreen;
+  flex-grow: 1;
+}
+
+.portrait {
+  width: 100%;
+  height: 250px;
+  background-color: purple;
+}
+@media screen and (min-width: 800px) {
+  .grid {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .block {
+    margin: 20px;
+  }
 }
