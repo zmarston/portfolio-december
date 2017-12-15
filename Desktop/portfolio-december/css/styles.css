@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box; }
+
 .grid {
   background-color: darkred;
   width: 100%;
@@ -10,7 +13,12 @@
   background-color: darkblue;
   width: 200px;
   height: 200px;
-  margin-top: 20px; }
+  margin: 20px;
+  transform: scale(1);
+  transition: transform .2s ease-in-out; }
+
+.block:hover {
+  transform: scale(3); }
 
 .header {
   width: 100%;
@@ -32,9 +40,8 @@
   .grid {
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap; }
-
-  .block {
-    margin: 20px; } }
+    flex-wrap: wrap;
+    border-left: 200px darkred solid;
+    border-right: 200px darkred solid; } }
 
 /*# sourceMappingURL=styles.css.map */
