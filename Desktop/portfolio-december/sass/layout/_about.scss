@@ -1,0 +1,21 @@
+.about-me {
+  height: 600px;
+  width: 100%;
+  background-color: $color1;
+  flex-grow: 1;
+  color: $color2;
+  padding: 30px;
+  @include flex-center-column;
+  border-radius: 0px 0px 50% 50%;
+}
+.about-me p {
+  margin: 0;
+}
+ .about-me h1, .about-me li {
+   margin: 0;
+ }
+ @media #{$large} {
+   .about-me {
+     height: 300px;
+   }
+ }

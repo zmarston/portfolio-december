@@ -1,0 +1,18 @@
+.footer {
+  @include flex-center-column;
+  background-color: $color1;
+  border-radius: 50% 50% 0px 0px;
+}
+.footer h3 {
+  color: $color2;
+}
+.portrait {
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  margin: 10px;
+}
+.portrait img {
+  width: 300px;
+  border-radius: 10px;
+}
