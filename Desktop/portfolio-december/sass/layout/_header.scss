@@ -9,6 +9,15 @@
   margin: 0;
   padding-top: 50px;
 }
+.z:hover {
+  color: $color1;
+}
+.m:hover {
+  color: $color1;
+}
+.p:hover {
+  color: $color1;
+}
 @media #{$large} {
   .header h1 {
     font-size: 57px;
